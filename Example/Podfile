@@ -1,0 +1,19 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://bj.gitlab.cnlive.com/ios-team/CNLiveRepos.git'
+
+target 'CNLiveCacheKit_Example' do
+  pod 'CNLiveCacheManagerKit', :path => '../'
+
+  #pod 'YYCache'
+  pod 'CNLiveUserManagement'
+  
+  target 'CNLiveCacheKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
